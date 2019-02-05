@@ -1,0 +1,98 @@
+body
+{
+	background-color: #8c4ba8;
+	margin: 0;
+
+}
+
+h1
+{
+	font-size: 75px;
+	color: #ffffff;
+	text-align: center;
+	font-family: Impact, Charcoal, sans-serif;
+	margin-top: 20px;
+}
+
+h4
+{
+	color: #ffffff;
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	margin-top: 40px;
+}
+
+.container
+{
+
+	/*background-color: #ffffff;*/
+	height: 400px;
+	width: 350px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0; 
+}
+
+.envelope
+{
+	background-color: #edc421;
+	height: 150px;
+	width: 270px;
+	position: relative;
+	left: 40px;
+	top: 160px;
+}
+
+.postcard 
+{
+	background-color: #ffffff;
+	height: 150px;
+	width: 250px;
+	position: relative;
+	left: 10px;
+
+}
+
+.inner1
+{
+	width: 0;
+	height: 0;
+	border-bottom: 150px solid #edc421;
+	border-right: 250px solid transparent;
+	position: relative;
+	bottom: 0px;
+}
+
+.inner2 
+{
+	width: 0;
+	height: 0;
+	border-bottom: 150px solid #dbb520;
+	border-left: 260px solid transparent;
+	position: relative;
+	bottom: 0px;
+}
+
+.lid 
+{
+	width: 0;
+	height: 0;
+	border-top: 80px solid #bf9d18;
+	border-right: 134px solid transparent;
+	border-left: 137px solid transparent;
+	position: relative;
+	bottom: 150px;
+	transform-origin: top;
+}
+
+.envelope:hover .lid {
+	transform: rotateX(180deg);
+	z-index: -1;
+}
+
+.envelope:hover {
+	transform: translateY(-40px);
+}
